@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'chakra', Arial, Helvetica, sans-serif;
+}
+
+/*a fonte vai ser buscada no google fonts, (não esquecer de tirar o <style> pois da erro*/
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/*vamos editar o cabeçalho*/
+header{ /*backgrond buscar no css gradiente, pode colocar cor solida também*/
+    background: #2A7B9B;
+background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+color:rgb(8, 5, 53);
+padding: 35px;
+}
+
+/*toda classe começa com ponto*/
+/*vamos editar o conteiner receita*/
+.receitas-conteiner{ 
+    display: flex;
+    flex-wrap: wrap; /* flexibilizar a imagem mostrada */
+    gap: 30px; /*espaçamento entre imagens */
+    justify-content: center; /*  centralizar*/
+    padding-top: 10px; /*espaçamento do topo*/
+}
+
+/*toda classe começa com ponto*/
+/*vamos editar o conteiner receita*/
+/*getcssscan.com - colocar sombreamento*/
+
+.receita{
+background: #2ddb70;
+border-radius: 10px;
+padding: 15px;
+width: 350px;
+display: flex;
+align-items: center;
+flex-direction: column;
+box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+transition: 0.3s;
+}
+
+/*editar imagens*/
+.receita img{
+    max-width: 100%;
+    height: 250px;
+    display: block;
+    object-fit: cover; /*ajustar objeto*/
+    border-radius: 20px; /*arredondar bordas*/
+}
+
+/*editar rodapé*/
+
+footer{
+    background-color: rgb(204, 89, 169);
+    color: black;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer h2, footer p {
+    font-weight: 100;
+    font-size: small;
+}
+
+footer img{
+    max-width: 100%;
+    height: 50px;
+    display: block;
+    object-fit: cover ; /*ajustar objeto*/
+    border-radius: 20px; /*arredondar bordas*/
+}
